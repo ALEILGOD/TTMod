@@ -1,5 +1,6 @@
 package net.alexglitch.tutorial;
 
+import net.alexglitch.tutorial.block.ModBlocks;
 import net.alexglitch.tutorial.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -13,5 +14,6 @@ public class TutorialMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
         ModItems.registerModItems();
+        ModBlocks.registerModBlocks();
 	}
 }
