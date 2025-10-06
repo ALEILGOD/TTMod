@@ -1,7 +1,6 @@
 {
-  "variants": {
-    "": {
-      "model": "tutorialmod:block/pink_garnet_deepslate_ore"
-    }
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "tutorialmod:block/pink_garnet_deepslate_ore"
   }
 }
