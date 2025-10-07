@@ -12,6 +12,7 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     public static final Item PINK_GARNET = registerItem("pink_garnet", new Item(new Item.Settings()));
     public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet", new Item(new Item.Settings()));
+    public static final Item CREATIVE_ESSENCE = registerItem("creative_essence", new Item(new Item.Settings()));
 
     public static final Item CHISEL = registerItem("chisel", new ChiselItems(new Item.Settings().maxDamage(32)));
 
@@ -26,6 +27,7 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(PINK_GARNET);
             entries.add(RAW_PINK_GARNET);
+            entries.add(CREATIVE_ESSENCE);
         });
     }
 }
