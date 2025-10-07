@@ -1,6 +1,7 @@
 package net.alexglitch.tutorial.block;
 
 import net.alexglitch.tutorial.TutorialMod;
+import net.alexglitch.tutorial.block.custom.MagicBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -35,6 +36,9 @@ public class ModBlocks {
                     AbstractBlock.Settings.create().strength(3f)
                             .requiresTool()
                             .sounds(BlockSoundGroup.DEEPSLATE)));
+
+    public static final Block MAGIC_BLOCK = registerBlock("magic_block",
+            new MagicBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
